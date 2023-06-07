@@ -1,0 +1,49 @@
+@import '../../styles/includes';
+
+#table-wrapper {
+    @include row-h;
+    margin: map-get($sizing, 'w-22') 0;
+}
+
+#league-table {
+    width: 68%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+
+    div {
+        padding-top: map-get($sizing, 'w-11');
+        @include text-three-dots-wrapper;
+    }
+
+    tr {
+
+        .club__name {
+            font-weight: bold;
+            text-align: left;
+        }
+        
+        .club__img img {
+            height: map-get($sizing, 'w-24');
+            width: map-get($sizing, 'w-24');
+            margin-right: map-get($sizing, 'w-12');
+            margin-top: map-get($sizing, 'w-4');
+        }
+
+        .club__last_5 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+
+
+}
+
+@media (max-width: 1499.98px) {
+    table {
+        width: 82%;
+    }
+}
+
+#table__header__name {
+    text-align: left;
+}

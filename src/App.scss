@@ -1,0 +1,39 @@
+@import './styles/includes';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#top-stats {
+  @include row-h;
+
+  div {
+    margin-inline: map-get($sizing, 'w-9');
+  }
+}
+
+#logo {
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 2%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
