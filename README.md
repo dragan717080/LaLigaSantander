@@ -12,7 +12,7 @@
     <li>React</li>
     <li>Node</li>
     <li>MySQL</li>
-    <li>TypeScript<li>
+    <li>TypeScript</li>
     <li>SASS</li>
     <li>Express</li>
 </ul>
