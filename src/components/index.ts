@@ -4,3 +4,7 @@ export { default as TopManagers } from './top_performers/TopManagers';
 export { default as AdditionalStats } from './top_performers/AdditionalStats';
 export { default as Table } from './table/Table';
 export { default as Header } from './header/Header';
+export { default as Players } from './players/Players';
+export { default as Player } from './player/Player';
+export { default as Teams } from './teams/Teams';
+export { default as Team } from './team/Team';

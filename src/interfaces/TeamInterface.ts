@@ -1,5 +1,7 @@
-import { TrophyInterface } from "./TrophiesInterface";
-import PlayerInterface from "./PlayerInterface";
+import { TrophyInterface } from './TrophiesInterface';
+import PlayerInterface from './PlayerInterface';
+import MatchInterface from './MatchInterface';
+import { BaseTeamRankingInterface } from './TeamRankingInterface';
 
 export interface BaseTeamInterface {
     tla: string;
@@ -14,7 +16,8 @@ export interface TeamStatsInterface {
 export type TeamMemberInterface = TeamInterface | PlayerInterface;
 export type TeamMembersInterface = TeamInterface[] | PlayerInterface[];
 
-export default interface TeamInterface extends BaseTeamInterface {
+export default interface TeamInterface extends 
+    BaseTeamInterface, BaseTeamRankingInterface {
     id: number;
     name: string;
     venue: string;
@@ -31,4 +34,16 @@ export default interface TeamInterface extends BaseTeamInterface {
     value: number;
     trophies?: TrophyInterface;
     players?: PlayerInterface[];
+    matches?: MatchInterface[];
+    top_scorers?: PlayerInterface[];
+    rank?: number;
+    wins?: number;
+    draws?: number;
+    loses?: number;
+}
+
+export interface TeamResultsInterface {
+    best: MatchInterface;
+    worst: MatchInterface;
+    clean_sheets: number;
 }

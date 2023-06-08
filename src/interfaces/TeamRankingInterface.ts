@@ -1,6 +1,13 @@
 import { BaseTeamInterface } from './TeamInterface';
 
-export default interface TeamRankingInterface extends BaseTeamInterface {
+export interface BaseTeamRankingInterface {
+    goals_scored?: number;
+    goals_conceeded?: number;
+    goal_difference?: number;
+}
+
+export default interface TeamRankingInterface extends 
+    BaseTeamInterface, BaseTeamRankingInterface {
     rank: number;
     team_name: string;
     tla: string;
@@ -10,8 +17,5 @@ export default interface TeamRankingInterface extends BaseTeamInterface {
     draws: number;
     loses: number;
     points: number;
-    goals_scored: number;
-    goals_conceeded: number;
-    goal_difference: number;
     last_5: string;
 }

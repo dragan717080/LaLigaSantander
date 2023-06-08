@@ -1,0 +1,38 @@
+@import '../../styles/includes';
+
+.news__row {
+    margin: 6% 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .news__row__item {
+        img {
+            height: 14rem;
+            width: 25.625rem;
+        }
+    
+        .news__row__item__full {
+            width: 25rem;
+            padding-inline: map-get($sizing, 'w-7');
+            display: flex;
+    
+            .news-type {
+                text-transform: uppercase;
+            }
+            
+            .news-timing {
+                margin-left: auto;
+                color: $gray-500;
+            }
+        }
+    
+        .news__row__item__title {
+            width: 25rem;
+            margin: map-get($sizing, 'w-40') 0;
+            text-align: center;
+            font-size: map-get($sizing, 'w-22');
+        }
+    }
+}
+
+

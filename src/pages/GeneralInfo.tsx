@@ -6,7 +6,7 @@ const GeneralInfo = () => {
         <div className='subtitle'>
             General
         </div>
-        <img id = 'logo' src = { require('../assets/images/logo.jpg') } />
+        <img id = 'logo' src = { require('../assets/images/icons/logo.jpg') } />
         <div>
             <div className='scorer'>
                 <div className='scorer__name'>Matches played</div>

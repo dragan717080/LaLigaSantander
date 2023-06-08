@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
-import { Header } from './components';
-import { Footer } from './pages';
+import { Header, Players, Player, Teams, Team } from './components';
+import { Footer, News } from './pages';
 import './index.scss';
 import App from './App';
 
@@ -14,6 +14,11 @@ root.render(
     <Routes>
       <Route path = '/' element = {<Layout />} >
         <Route path = '/' element = {<App />} />
+        <Route path = '/news' element = {<News />} />
+        <Route path = "/players" element = {<Players />} />
+        <Route path = "/players/:id" element = {<Player />} />
+        <Route path = "/teams" element = {<Teams />} />
+        <Route path = "/teams/:id/*" element = {<Team />} />
       </Route>
     </Routes>
   </Router>

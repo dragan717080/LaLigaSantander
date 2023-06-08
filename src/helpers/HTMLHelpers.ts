@@ -30,6 +30,38 @@ abstract class HTMLHelpers {
             }
         }
     }
+
+
+    static getColorOfPositionsForPlayer(positions: HTMLElement[]): void {
+        for (const position of positions) {
+            const c = position.innerText[position.innerText.length - 1];
+            switch (true) {
+                case (['S', 'W', 'C', 'F', 'T'].includes(c)):
+                    position.style.backgroundColor = 'red';
+                    break;
+                case (c === 'M'):
+                    position.style.backgroundColor = 'aquamarine';
+                    break;
+                case (c === 'B'):
+                    position.style.backgroundColor = 'rgb(12, 133, 57)';
+                    break;
+                default:
+                    position.style.backgroundColor = 'yellow';
+            }
+        }
+    }
+
+    static concatCollections(classNames: string[]): HTMLElement[] {
+        const result: HTMLElement[] = [];
+
+        classNames.forEach((className: string) => {
+            const elements: HTMLCollectionOf<Element> = document.getElementsByClassName(className);
+            const elementsArray: HTMLElement[] = Array.from(elements) as HTMLElement[];
+            result.push(...elementsArray);
+        });
+
+        return result;
+    }
 }
 
 export default HTMLHelpers;

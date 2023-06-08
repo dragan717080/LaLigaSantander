@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import './table.scss';
-import WinIcon from '../../assets/images/winicon.svg';
-import DrawIcon from '../../assets/images/drawicon.svg';
-import LoseIcon from '../../assets/images/loseicon.svg';
+import WinIcon from '../../assets/images/icons/winicon.svg';
+import DrawIcon from '../../assets/images/icons/drawicon.svg';
+import LoseIcon from '../../assets/images/icons/loseicon.svg';
 import AxiosService from '../../services/AxiosService';
 import { TeamRankingInterface } from '../../interfaces';
 

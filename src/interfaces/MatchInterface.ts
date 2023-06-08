@@ -12,4 +12,5 @@ export default interface MatchInterface {
     away_team_goals: number;
     venue_capacity?: number;
     rank_difference?: number;
+    result?: number;
 }

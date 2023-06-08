@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './header.scss';
-import logo from '../../assets/images/logo.jpg';
+import logo from '../../assets/images/icons/logo.jpg';
 import Navbar from './Navbar';
 import AxiosService from '../../services/AxiosService';
 import { MatchInterface } from '../../interfaces';

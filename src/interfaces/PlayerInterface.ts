@@ -2,6 +2,7 @@ export default interface PlayerInterface {
     id?: number;
     dob?: string;
     club_name?: string;
+    club_logo?: string;
     overall?: number;
     short_name?: string;
     long_name?: string;
@@ -78,4 +79,5 @@ export default interface PlayerInterface {
     goalkeeping_reflexes?: number;
     club_flag?: string;
     nation_flag?: string;
+    similar?: PlayerInterface[];
 }

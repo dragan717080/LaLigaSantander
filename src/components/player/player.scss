@@ -1,0 +1,263 @@
+@import '../../styles/includes';
+
+#player {
+    @include row-h;
+    width: 92%;
+    margin-left: 4%;
+}
+
+.basic-details {
+    display: flex;
+    margin-bottom: map-get($sizing, 'w-9');
+    margin-left: 1%;
+}
+
+.basic-info {
+    margin-left: 1%;
+}
+
+.basic-info__details {
+    display: flex;
+}
+
+.basic-info__details div {
+    margin: map-get($sizing, 'w-10') 1px 0 map-get($sizing, 'w-19');
+    width: max-content;
+}
+
+.basic-info__name {
+    font-size: map-get($sizing, 'w-24');
+    margin-top: map-get($sizing, 'w-34');
+    margin-bottom: map-get($sizing, 'w-12');
+}
+
+.additional-details {
+    display: flex;
+}
+
+.additional-details__subtitle {
+    text-align: center;
+}
+
+.additional-item div {
+    margin-inline: map-get($sizing, 'w-19');
+}
+
+.player__diagram img {
+    height: 27.5625rem;
+    width: 23.1875rem;
+}
+
+.player__profile-and-abilities {
+    display: flex;
+    margin: map-get($sizing, 'w-40') 0;
+}
+
+.player__profile-and-abilities__row {
+    margin-inline: map-get($sizing, 'w-19');
+}
+
+.additional-item__stats {
+    padding: map-get($sizing, 'w-4') map-get($sizing, 'w-7');
+    margin-bottom: map-get($sizing, 'w-4');
+    color: $white;
+    background-color: var(--db);
+}
+
+.player-positions {
+    padding: map-get($sizing, 'w-4') 14px;
+    margin: map-get($sizing, 'w-4') map-get($sizing, 'w-10') !important;
+    margin-right: 0 !important;
+    color: $white;
+    background-color: var(--db);
+}
+
+.player__flag {
+    height: map-get($sizing, 'w-42');
+    width: map-get($sizing, 'w-52');
+}
+
+.value-stats {
+    padding-top: map-get($sizing, 'w-3');
+    margin-bottom: map-get($sizing, 'w-7');
+}
+
+.player__profile-info__row {
+    display: flex;
+}
+
+.player__profile-info__row__title {
+    color: $orange;
+    margin-right: map-get($sizing, 'w-7');
+}
+
+.player__profile-info__row__stats {
+    color: $gray-300
+}
+
+.club-logo {
+    margin: 4% 0;
+}
+
+.club-logo img {
+    margin: map-get($sizing, 'w-11') 0;
+}
+
+.gray {
+    color: $gray-400;
+}
+
+.latest__news__img {
+    height: 16.25rem;
+    width: 23.75rem;
+}
+
+.positions {
+    height: fit-content;
+}
+
+.news-title {
+    margin: map-get($sizing, 'w-19') 0;
+    font-size: 22px;
+    text-align: center;
+}
+
+.profile__nation {
+    height: 29px;
+    margin-right: map-get($sizing, 'w-7');
+}
+
+.text__center {
+    text-align: center;
+}
+
+.player__position__1 {
+    height: map-get($sizing, 'w-42');
+    width: 48px;
+    margin: map-get($sizing, 'w-7');
+    padding-top: map-get($sizing, 'w-4');
+    color: $white;
+    background-color: yellow;
+    transform: translate(0px, -441px);
+}
+
+.player__position__1 div {
+    text-align: center;
+}
+
+.player__profile-club__row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.player__profile-club__row__title {
+    color: $red;
+}
+
+.player__profile-club__row__stats {
+    @include row-h;
+    color: #868e96;
+    width: 5.3125rem;
+    margin-left: map-get($sizing, 'w-10');
+}
+
+.player__info {
+    margin: 0 3%;
+}
+
+.skills {
+    margin-top: 1%;
+    margin-left: map-get($sizing, 'w-19');
+    display: flex;
+
+    .skills__row {
+        margin-inline: map-get($sizing, 'w-40');
+
+        .skills__row__item {
+            margin-bottom: map-get($sizing, 'w-19');
+            display: flex;
+        }
+    }
+
+    .skills__row:nth-child(1) {
+        margin-inline: 0;
+    }
+}
+
+.skill__title {
+    width: 100%;
+}
+
+.skill__stats {
+    height: map-get($sizing, 'w-26');
+    width: map-get($sizing, 'w-40');
+    margin-left: map-get($sizing, 'w-40');
+    padding-top: map-get($sizing, 'w-4');
+    margin-inline: map-get($sizing, 'w-4');
+    background-color: $yellow;
+    color: $white;
+    text-align: center;
+}
+
+.subtitle {
+    margin-bottom: 4%;
+}
+
+.a {
+    @include row;
+}
+
+.diagram {
+    transform: translateY(-394px);
+}
+
+#diagram {
+    height: 13.75rem;
+    width: 25rem;
+    margin-bottom: 4.4375rem;
+}
+
+.similar__basic-info__name {
+    display: flex;
+    margin: map-get($sizing, 'w-4') 0 map-get($sizing, 'w-6') map-get($sizing, 'w-7');
+}
+
+.basic-info__player-name {
+    margin-top: map-get($sizing, 'w-3');
+    margin-left: map-get($sizing, 'w-10');
+}
+
+.basic-info__flag img {
+    height: map-get($sizing, 'w-24');
+    width: map-get($sizing, 'w-32');
+}
+
+.similar__basic-info__details {
+    display: flex;
+}
+
+.similar {
+    display: flex;
+    margin-bottom: map-get($sizing, 'w-12');
+
+    .similar__face img {
+        height: 4.375rem;
+        width: 4.375rem;
+    }
+
+    .positions {
+        margin: 0 map-get($sizing, 'w-4') !important;
+    }
+}
+
+.goalkeeper {
+    transform: translate(-6px, -89px);
+    background-color: yellow !important;
+}
+
+.goalkeeper-diagram {
+    transform: translate(0, 0);
+}
+
+
+

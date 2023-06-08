@@ -1,0 +1,20 @@
+@import '../../../styles/includes';
+
+#team__navbar {
+    @include row;
+    margin-bottom: map-get($sizing, 'w-49');
+    background-color: $lightgray;
+
+    .team__navbar__menu-item {
+        padding: map-get($sizing, 'w-20');
+        font-size: map-get($sizing, 'w-19');
+        text-transform: uppercase;
+        line-height: 1.1;
+        color: $white;
+    }
+}
+
+.active-navbar {
+    background-color: var(--db);
+    margin-top: map-get($sizing, 'w-4');
+}

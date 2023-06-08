@@ -1,0 +1,190 @@
+@import '../../styles/includes';
+
+#team__venue {
+    height: 17.5rem;
+    width: 100%;
+    margin-bottom: -0.75rem;
+}
+
+.team__name {
+    font-size: map-get($sizing, 'w-35');
+    font-weight: 900;
+    text-align: center;
+    color: $white;
+    padding-top: map-get($sizing, 'w-39');
+    position: absolute;
+    left: 42%;
+    transform: translateY(-13.4375rem);
+}
+
+#team__general-stats {
+    @include row-h;
+}
+
+.team__general-stats__item {
+    margin-inline: map-get($sizing, 'w-40');
+    margin-bottom: map-get($sizing, 'w-40');
+}
+
+.general-stats__row {
+    display: flex;
+}
+
+.general-stats__row__title {
+    margin-right: 7px;
+}
+
+.squad {
+    margin: 2% 0;
+}
+
+.player {
+    display: flex;
+    margin-left: 4%;
+    margin-bottom: 1%;
+}
+
+.player__img {
+    height: 79px;
+    width: 79px;
+}
+
+.player__stats-name {
+    display: flex;
+    margin-top: 10px;
+}
+
+.player__long_name {
+    margin-top: 1px;
+}
+
+.player__stats-positions {
+    display: flex;
+}
+
+.player__stats-position {
+    width: 34px;
+    height: map-get($sizing, 'w-24');
+    background: var(--db);
+    color: $white;
+    margin-right: map-get($sizing, 'w-9');
+    text-align: center;
+    margin-top: 0 !important;
+    padding-top: map-get($sizing, 'w-4');
+}
+
+.player__stats-overall, .player__stats-potential {
+    height: map-get($sizing, 'w-24');
+    width: 34px;
+    background: var(--db);
+    color: $white;
+    margin-right: map-get($sizing, 'w-9');
+    padding-top: map-get($sizing, 'w-4');
+    text-align: center;
+}
+
+#squad {
+    margin-bottom: 4.375rem;
+}
+
+#staff {
+    min-height: 13.875rem;
+}
+
+#staff__img {
+    margin-right: map-get($sizing, 'w-19');
+}
+
+#staff__img img {
+    border-radius: 50%;
+    height: 8.75rem;
+    width: 8.75rem;
+}
+
+#staff__name {
+    font-size: map-get($sizing, 'w-24');
+}
+
+#staff__info {
+    margin-top: 2%;
+}
+
+#stadium__info {
+    min-height: 13.9375rem;
+}
+
+.additional__stats__home-team__name {
+    width: 10.125rem;
+    text-align: center;
+}
+
+.subtitle__m {
+    margin-bottom: map-get($sizing, 'w-19');
+}
+
+.subtitle__k {
+    margin-top: map-get($sizing, 'w-19');
+    margin-bottom: map-get($sizing, 'w-19');
+}
+
+.matches-list__match {
+    display: flex;
+    width: 48%;
+    margin-left: 26%;
+    margin-bottom: 1%;
+}
+
+.matches-list__match img {
+    height: map-get($sizing, 'w-28');
+    width: map-get($sizing, 'w-28');
+}
+
+#team__matches-list {
+    margin-bottom: map-get($sizing, 'w-19');
+}
+
+.matchday {
+    width: 22%;
+}
+
+.match__home_team_name, .match__away_team_name {
+    width: 10.625rem;
+    margin-inline: map-get($sizing, 'w-14');
+}
+
+.match__away_team_goals {
+    margin-inline: map-get($sizing, 'w-40');
+}
+
+#trophies {
+    min-height: 13.875rem;
+}
+
+.trophies__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-inline: map-get($sizing, 'w-40');
+}
+
+.trophies__row__trophy {
+    display: flex;
+    justify-content: center;
+    margin: 1% 0;
+}
+
+.trophies__name {
+    font-size: map-get($sizing, 'w-23');
+    letter-spacing: .04em;
+    line-height: 1.5;
+    margin: map-get($sizing, 'w-40') 0;
+    text-transform: uppercase;
+    display:flex;
+    justify-content: center;
+}
+
+@media (max-width: 1470.98px) {
+    .matches-list__match {
+        width: 62%;
+        margin-left: 19%;
+    }
+}

@@ -1,4 +1,4 @@
-import { TeamInterface, MatchInterface, PlayerInterface, TrophyInterface } from '../interfaces';
+import { TeamInterface, TeamResultsInterface, MatchInterface, PlayerInterface, TrophyInterface } from '../interfaces';
 import StringHelpers from './StringHelpers';
 import TrophiesInterface, { TrophyResponseInterface } from '../interfaces/TrophiesInterface';
 
@@ -52,6 +52,23 @@ abstract class FootballAPIHelpers {
             result[trophy.trophy_name as keyof TrophyInterface] = trophy.trophy_count as any;
             return result;
         }, {} as TrophyInterface);
+    }
+
+    static getResultsForTeam(teamName: string, matches: MatchInterface[]): TeamResultsInterface {
+        var cleanSheets: number = 0;
+        for (const result of matches!) {
+          if (result.home_team === teamName) {
+            if (result.away_team_goals === 0) cleanSheets++;
+            matches![matches!.indexOf(result)].result = result.home_team_goals - result.away_team_goals;
+          }
+          else {
+            if (result.home_team_goals === 0) cleanSheets++;
+            matches![matches!.indexOf(result)].result = result.away_team_goals - result.home_team_goals;
+          }
+        }
+        matches!.sort((a, b) => b.result! - a.result!);
+        return {'best': matches![0], 'worst': matches![matches!.length -1], 'clean_sheets': cleanSheets};  
+
     }
 }
 
