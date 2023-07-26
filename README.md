@@ -11,7 +11,7 @@
 
 Welcome to the La Liga Santander Football Website! This project is a showcase of my web development skills, focusing on creating an immersive and informative platform for football enthusiasts. The website provides access to match results, player profiles, and detailed information about each club participating in La Liga Santander.
 
-### Technologies Used
+## Technologies Used
 
 - **Frontend:**
   - React (JavaScript library for building user interfaces)
