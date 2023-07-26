@@ -23,4 +23,18 @@ Welcome to the La Liga Santander Football Website! This project is a showcase of
   - TypeScript (Superset of JavaScript with static typing)
   - MySQL (Relational database management system)
 
-### Thank you for browsing!
+## Features
+
+1. **Match Results and Table:**
+   - Detailed match summaries with goal scorers, cards, etc.
+   - Interactive league table with points, goals scored, etc.
+
+2. **Player Profiles:**
+   - Full player profiles with personal information
+   - Career statistics, including goals, assists, and more
+   - Visual diagram representations of player skills
+
+3. **Club Pages:**
+   - Comprehensive club pages for each team in La Liga Santander
+   - Trophy cabinet showcasing club achievements
+   - Detailed squad information with player profiles
